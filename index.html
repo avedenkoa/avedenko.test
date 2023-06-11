@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="quiz-page">
+      <div class="quiz-page__wrapper">
+        <div class="quiz-page__main quiz-item active-item">
+          <h1 class="quiz-page__main-title">Quiz</h1>
+          <img class="quiz-page__img" src="./img/main.webp" alt="main_img" />
+          <h3 class="quiz-page__title">
+            If you get a high score, you probably spend way too much time on
+            Wikipedia
+          </h3>
+          <p class="quiz-page__sub-title">
+            There are 4 questions and a break for refreshments in the middle.
+            <br />
+            (You'll have to provide your own snacks, sorry.)
+          </p>
+          <button class="quiz-page__btn start-btn">Let's get started</button>
+        </div>
+
+        <ul class="quiz-page__list">
+          <li class="quiz-page__list-item quiz-item">
+            <p class="quiz-page__count">1 of <b>4</b></p>
+            <h3 class="quiz-page__question">
+              Which famous con-artist's life is the film
+              <b>Catch Me If You Can</b> based on?
+            </h3>
+            <img
+              class="quiz-page__question-img"
+              src="./img/1.webp"
+              alt="question_img"
+            />
+            <form class="quiz-page__form">
+              <ul class="quiz-page__answer-list">
+                <li class="quiz-page__answer-list-item">
+                  <label for="first1" class="quiz-page__answer-btn"
+                    >Gregor MacGregor
+                    <input
+                      id="first1"
+                      type="radio"
+                      name="firstAnswer"
+                      value="Gregor MacGregor"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="first2" class="quiz-page__answer-btn"
+                    >Frank Abagnale
+                    <input
+                      id="first2"
+                      type="radio"
+                      name="firstAnswer"
+                      value="Frank Abagnale"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="first3" class="quiz-page__answer-btn"
+                    >Charles Ponzi
+                    <input
+                      id="first3"
+                      type="radio"
+                      name="firstAnswer"
+                      value="Charles Ponzi"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="first4" class="quiz-page__answer-btn"
+                    >Bernard Madoff
+                    <input
+                      id="first4"
+                      type="radio"
+                      name="firstAnswer"
+                      value="Bernard Madoff"
+                    />
+                  </label>
+                </li>
+              </ul>
+              <p class="quiz-page__error error">Please choose your answer</p>
+              <button class="quiz-page__btn to-second">Next</button>
+            </form>
+          </li>
+
+          <li class="quiz-page__list-item quiz-item">
+            <p class="quiz-page__count">2 of <b>4</b></p>
+            <h3 class="quiz-page__question">
+              How many stars does <b>the U.S flag</b> have?
+            </h3>
+            <img
+              class="quiz-page__question-img"
+              src="./img/2.webp"
+              alt="question_img"
+            />
+            <form class="quiz-page__form">
+              <ul class="quiz-page__answer-list">
+                <li class="quiz-page__answer-list-item">
+                  <label for="second1" class="quiz-page__answer-btn"
+                    >30
+                    <input
+                      id="second1"
+                      type="radio"
+                      name="secondAnswer"
+                      value="30"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="second2" class="quiz-page__answer-btn"
+                    >40
+                    <input
+                      id="second2"
+                      type="radio"
+                      name="secondAnswer"
+                      value="40"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="second3" class="quiz-page__answer-btn"
+                    >50
+                    <input
+                      id="second3"
+                      type="radio"
+                      name="secondAnswer"
+                      value="50"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="second4" class="quiz-page__answer-btn"
+                    >60
+                    <input
+                      id="second4"
+                      type="radio"
+                      name="secondAnswer"
+                      value="60"
+                    />
+                  </label>
+                </li>
+              </ul>
+              <p class="quiz-page__error error">Please choose your answer</p>
+              <button class="quiz-page__btn to-brake">Next</button>
+            </form>
+          </li>
+
+          <li class="quiz-page__list-item quiz-item">
+            <h3 class="quiz-page__question">
+              <b> Well, you're halfway through, </b>
+              <br />
+              We hear green tea or coffee is good for stimulating the mind...
+            </h3>
+            <img
+              class="quiz-page__question-img"
+              src="./img/brake.webp"
+              alt="question_img"
+            />
+            <button class="quiz-page__btn to-third">Let's go</button>
+          </li>
+
+          <li class="quiz-page__list-item quiz-item">
+            <p class="quiz-page__count">3 of <b>4</b></p>
+            <h3 class="quiz-page__question">
+              Who painted <b>The Persistence of Memory</b>?
+            </h3>
+            <img
+              class="quiz-page__question-img"
+              src="./img/3.webp"
+              alt="question_img"
+            />
+            <form class="quiz-page__form">
+              <ul class="quiz-page__answer-list">
+                <li class="quiz-page__answer-list-item">
+                  <label for="third1" class="quiz-page__answer-btn"
+                    >René Magritte
+                    <input
+                      id="third1"
+                      type="radio"
+                      name="thirdAnswer"
+                      value="René Magritte"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="third2" class="quiz-page__answer-btn"
+                    >Salvador Dali
+                    <input
+                      id="third2"
+                      type="radio"
+                      name="thirdAnswer"
+                      value="Salvador Dali"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="third3" class="quiz-page__answer-btn"
+                    >Edvard Munch
+                    <input
+                      id="third3"
+                      type="radio"
+                      name="thirdAnswer"
+                      value="Edvard Munch"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="third4" class="quiz-page__answer-btn"
+                    >Frida Kahlo
+                    <input
+                      id="third4"
+                      type="radio"
+                      name="thirdAnswer"
+                      value="Frida Kahlo"
+                    />
+                  </label>
+                </li>
+              </ul>
+              <p class="quiz-page__error error">Please choose your answer</p>
+              <button class="quiz-page__btn to-fourth">Next</button>
+            </form>
+          </li>
+
+          <li class="quiz-page__list-item quiz-item">
+            <p class="quiz-page__count">4 of <b>4</b></p>
+            <h3 class="quiz-page__question">
+              What is <b>JK Rowling’s</b> first name?
+            </h3>
+            <img
+              class="quiz-page__question-img"
+              src="./img/4.webp"
+              alt="question_img"
+            />
+            <form class="quiz-page__form">
+              <ul class="quiz-page__answer-list">
+                <li class="quiz-page__answer-list-item">
+                  <label for="fourth1" class="quiz-page__answer-btn"
+                    >Jane
+                    <input
+                      id="fourth1"
+                      type="radio"
+                      name="fourthAnswer"
+                      value="Jane"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="fourth2" class="quiz-page__answer-btn"
+                    >Jacqueline
+                    <input
+                      id="fourth3"
+                      type="radio"
+                      name="fourthAnswer"
+                      value="Jacqueline"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="fourth4" class="quiz-page__answer-btn"
+                    >Julie
+                    <input
+                      id="fourth4"
+                      type="radio"
+                      name="fourthAnswer"
+                      value="Julie"
+                    />
+                  </label>
+                </li>
+                <li class="quiz-page__answer-list-item">
+                  <label for="fourth5" class="quiz-page__answer-btn"
+                    >Joanne
+                    <input
+                      id="fourth5"
+                      type="radio"
+                      name="fourthAnswer"
+                      value="Joanne"
+                    />
+                  </label>
+                </li>
+              </ul>
+              <p class="quiz-page__error error">Please choose your answer</p>
+              <button class="quiz-page__btn finish-btn">Finish</button>
+            </form>
+          </li>
+        </ul>
+
+        <div class="quiz-page__main quiz-item">
+          <h1 class="quiz-page__main-title">We're done!</h1>
+          <h3 class="quiz-page__title">
+            Your score is
+            <span class="quiz-page__correct-answer-is result"></span> correct
+            answers.
+          </h3>
+          <button class="quiz-page__btn try-again">Try again</button>
+        </div>
+
+        <div class="quiz-page__popup correct-popup">
+          <div class="quiz-page__popup-content">
+            <div class="quiz-page__popup-close close-correct-popup">
+              <img
+                class="quiz-page__popup-close-img"
+                src="./img/close.jpg"
+                alt="close"
+              />
+            </div>
+            <img class="quiz-page__popup-img" src="./img/gj.webp" alt="good" />
+            <h3 class="quiz-page__popup-title">Good job!</h3>
+            <p class="quiz-page__popup-sub-title">That's the right answer!</p>
+          </div>
+        </div>
+
+        <div class="quiz-page__popup wrong-popup">
+          <div class="quiz-page__popup-content">
+            <div class="quiz-page__popup-close close-wrong-popup">
+              <img
+                class="quiz-page__popup-close-img"
+                src="./img/close.jpg"
+                alt="close"
+              />
+            </div>
+            <img
+              class="quiz-page__popup-img"
+              src="./img/wrong.webp"
+              alt="good"
+            />
+            <h3 class="quiz-page__popup-title">Sorry!</h3>
+            <p class="quiz-page__popup-sub-title">
+              That's the wrong answer.
+              <br />
+              <br />
+              The correct answer is -
+              <span
+                class="quiz-page__correct-answer-is correct-answer-is"
+              ></span
+              >.
+            </p>
+          </div>
+        </div>
+
+        <div class="quiz-page__overlay overlay"></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
